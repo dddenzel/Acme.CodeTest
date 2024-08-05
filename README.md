@@ -18,7 +18,7 @@ This data I would expose over a simple REST API, with relevant search filters fo
 The overall design including descriptions can be viewed [here](https://s3.ap-southeast-2.amazonaws.com/codetest.public/CodeDesign.png).
 
 # Notes
-The code is just a sample. It is perhaps a bit untidy/verbose for my liking - I tried to keep within the required time limits.  
+The code is just a sample. It is perhaps a bit untidy/verbose for my liking - I tried to keep within the required time limits. It is untested.  
 The data model is debatable. Its probably something close to what I would use in production for a relational database design - though strictly speaking it would allow a customer to use a print distributor from a different country. You would restrict this by both front end and back end validation.  
 A monthly scheduled event might work for a single timezone, but if this software has to the potential to be across multiple timezones, a different approach may be needed. Possibly multiple triggers or some business logic within a single trigger.  
   
