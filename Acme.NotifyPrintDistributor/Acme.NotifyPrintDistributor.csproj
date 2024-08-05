@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <AWSProjectType>Lambda</AWSProjectType>
+    <!-- This property makes the build directory similar to a publish directory and helps the AWS .NET Lambda Mock Test Tool find project dependencies. -->
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <!-- Generate ready to run images during publishing to improve cold start time. -->
+    <PublishReadyToRun>true</PublishReadyToRun>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Amazon.Lambda.Core" Version="2.2.0" />
+    <PackageReference Include="Amazon.Lambda.Serialization.SystemTextJson" Version="2.4.1" />
+    <PackageReference Include="Amazon.Lambda.SQSEvents" Version="2.2.0" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SimpleInjector" Version="5.4.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Acme.CodeTest.Api">
+      <HintPath>ExternalLibraries\Acme.CodeTest.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="FirstPrintDistributorApi">
+      <HintPath>ExternalLibraries\FirstPrintDistributorApi.dll</HintPath>
+    </Reference>
+    <Reference Include="SecondPrintDistributorApi">
+      <HintPath>ExternalLibraries\SecondPrintDistributorApi.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

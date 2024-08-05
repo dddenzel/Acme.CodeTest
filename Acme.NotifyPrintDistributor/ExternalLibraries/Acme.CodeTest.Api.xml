@@ -1,0 +1,2365 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Acme.CodeTest.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Acme.CodeTest.Api.Api.ISubscriptionApiSync">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiSync.CreateItems(System.Collections.Generic.List{Acme.CodeTest.Api.Model.CustomerSubscriptionDto},System.Int32)">
+            <summary>
+            Creates Subscription records
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="customerSubscriptionDto">Subscription records to create. (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiSync.CreateItemsWithHttpInfo(System.Collections.Generic.List{Acme.CodeTest.Api.Model.CustomerSubscriptionDto},System.Int32)">
+            <summary>
+            Creates Subscription records
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="customerSubscriptionDto">Subscription records to create. (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiSync.DeleteItem(System.String,System.Int32)">
+            <summary>
+            Delete Subscription record
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id">Id</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiSync.DeleteItemWithHttpInfo(System.String,System.Int32)">
+            <summary>
+            Delete Subscription record
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id">Id</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiSync.GetItemById(System.Int32,System.Int32)">
+            <summary>
+            Get Subscription record by Id
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>CustomerSubscriptionDto</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiSync.GetItemByIdWithHttpInfo(System.Int32,System.Int32)">
+            <summary>
+            Get Subscription record by Id
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of CustomerSubscriptionDto</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiSync.GetItems(System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">
+            <summary>
+            Get Subscription records
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="isActiveFilter"> (optional)</param>
+            <param name="startDateFilter"> (optional)</param>
+            <param name="endDateFilter"> (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiSync.GetItemsWithHttpInfo(System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">
+            <summary>
+            Get Subscription records
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="isActiveFilter"> (optional)</param>
+            <param name="startDateFilter"> (optional)</param>
+            <param name="endDateFilter"> (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiSync.UpdateItem(System.String,Acme.CodeTest.Api.Model.CustomerSubscriptionDto,System.Int32)">
+            <summary>
+            Update Subscription record
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id">Id</param>
+            <param name="customerSubscriptionDto">Subscription record to update. (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiSync.UpdateItemWithHttpInfo(System.String,Acme.CodeTest.Api.Model.CustomerSubscriptionDto,System.Int32)">
+            <summary>
+            Update Subscription record
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id">Id</param>
+            <param name="customerSubscriptionDto">Subscription record to update. (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Api.ISubscriptionApiAsync">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiAsync.CreateItemsAsync(System.Collections.Generic.List{Acme.CodeTest.Api.Model.CustomerSubscriptionDto},System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Creates Subscription records
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="customerSubscriptionDto">Subscription records to create. (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiAsync.CreateItemsWithHttpInfoAsync(System.Collections.Generic.List{Acme.CodeTest.Api.Model.CustomerSubscriptionDto},System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Creates Subscription records
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="customerSubscriptionDto">Subscription records to create. (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (List&lt;CustomerSubscriptionDto&gt;)</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiAsync.DeleteItemAsync(System.String,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Delete Subscription record
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id">Id</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiAsync.DeleteItemWithHttpInfoAsync(System.String,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Delete Subscription record
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id">Id</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiAsync.GetItemByIdAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Get Subscription record by Id
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of CustomerSubscriptionDto</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiAsync.GetItemByIdWithHttpInfoAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Get Subscription record by Id
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (CustomerSubscriptionDto)</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiAsync.GetItemsAsync(System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Get Subscription records
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="isActiveFilter"> (optional)</param>
+            <param name="startDateFilter"> (optional)</param>
+            <param name="endDateFilter"> (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiAsync.GetItemsWithHttpInfoAsync(System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Get Subscription records
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="isActiveFilter"> (optional)</param>
+            <param name="startDateFilter"> (optional)</param>
+            <param name="endDateFilter"> (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (List&lt;CustomerSubscriptionDto&gt;)</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiAsync.UpdateItemAsync(System.String,Acme.CodeTest.Api.Model.CustomerSubscriptionDto,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Update Subscription record
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id">Id</param>
+            <param name="customerSubscriptionDto">Subscription record to update. (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.ISubscriptionApiAsync.UpdateItemWithHttpInfoAsync(System.String,Acme.CodeTest.Api.Model.CustomerSubscriptionDto,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Update Subscription record
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id">Id</param>
+            <param name="customerSubscriptionDto">Subscription record to update. (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (List&lt;CustomerSubscriptionDto&gt;)</returns>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Api.ISubscriptionApi">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Api.SubscriptionApi">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Api.SubscriptionApi"/> class.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Api.SubscriptionApi"/> class.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.#ctor(Acme.CodeTest.Api.Client.Configuration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Api.SubscriptionApi"/> class
+            using Configuration object
+            </summary>
+            <param name="configuration">An instance of Configuration</param>
+            <returns></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.#ctor(Acme.CodeTest.Api.Client.ISynchronousClient,Acme.CodeTest.Api.Client.IAsynchronousClient,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Api.SubscriptionApi"/> class
+            using a Configuration object and client instance.
+            </summary>
+            <param name="client">The client interface for synchronous API access.</param>
+            <param name="asyncClient">The client interface for asynchronous API access.</param>
+            <param name="configuration">The configuration object.</param>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Api.SubscriptionApi.AsynchronousClient">
+            <summary>
+            The client for accessing this underlying API asynchronously.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Api.SubscriptionApi.Client">
+            <summary>
+            The client for accessing this underlying API synchronously.
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.GetBasePath">
+            <summary>
+            Gets the base path of the API client.
+            </summary>
+            <value>The base path</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Api.SubscriptionApi.Configuration">
+            <summary>
+            Gets or sets the configuration object
+            </summary>
+            <value>An instance of the Configuration</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Api.SubscriptionApi.ExceptionFactory">
+            <summary>
+            Provides a factory method hook for the creation of exceptions.
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.CreateItems(System.Collections.Generic.List{Acme.CodeTest.Api.Model.CustomerSubscriptionDto},System.Int32)">
+            <summary>
+            Creates Subscription records 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="customerSubscriptionDto">Subscription records to create. (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.CreateItemsWithHttpInfo(System.Collections.Generic.List{Acme.CodeTest.Api.Model.CustomerSubscriptionDto},System.Int32)">
+            <summary>
+            Creates Subscription records 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="customerSubscriptionDto">Subscription records to create. (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.CreateItemsAsync(System.Collections.Generic.List{Acme.CodeTest.Api.Model.CustomerSubscriptionDto},System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Creates Subscription records 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="customerSubscriptionDto">Subscription records to create. (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.CreateItemsWithHttpInfoAsync(System.Collections.Generic.List{Acme.CodeTest.Api.Model.CustomerSubscriptionDto},System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Creates Subscription records 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="customerSubscriptionDto">Subscription records to create. (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (List&lt;CustomerSubscriptionDto&gt;)</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.DeleteItem(System.String,System.Int32)">
+            <summary>
+            Delete Subscription record 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id">Id</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.DeleteItemWithHttpInfo(System.String,System.Int32)">
+            <summary>
+            Delete Subscription record 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id">Id</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.DeleteItemAsync(System.String,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Delete Subscription record 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id">Id</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.DeleteItemWithHttpInfoAsync(System.String,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Delete Subscription record 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id">Id</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.GetItemById(System.Int32,System.Int32)">
+            <summary>
+            Get Subscription record by Id 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>CustomerSubscriptionDto</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.GetItemByIdWithHttpInfo(System.Int32,System.Int32)">
+            <summary>
+            Get Subscription record by Id 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of CustomerSubscriptionDto</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.GetItemByIdAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Get Subscription record by Id 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of CustomerSubscriptionDto</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.GetItemByIdWithHttpInfoAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Get Subscription record by Id 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (CustomerSubscriptionDto)</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.GetItems(System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">
+            <summary>
+            Get Subscription records 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="isActiveFilter"> (optional)</param>
+            <param name="startDateFilter"> (optional)</param>
+            <param name="endDateFilter"> (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.GetItemsWithHttpInfo(System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">
+            <summary>
+            Get Subscription records 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="isActiveFilter"> (optional)</param>
+            <param name="startDateFilter"> (optional)</param>
+            <param name="endDateFilter"> (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.GetItemsAsync(System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Get Subscription records 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="isActiveFilter"> (optional)</param>
+            <param name="startDateFilter"> (optional)</param>
+            <param name="endDateFilter"> (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.GetItemsWithHttpInfoAsync(System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Get Subscription records 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="isActiveFilter"> (optional)</param>
+            <param name="startDateFilter"> (optional)</param>
+            <param name="endDateFilter"> (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (List&lt;CustomerSubscriptionDto&gt;)</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.UpdateItem(System.String,Acme.CodeTest.Api.Model.CustomerSubscriptionDto,System.Int32)">
+            <summary>
+            Update Subscription record 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id">Id</param>
+            <param name="customerSubscriptionDto">Subscription record to update. (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.UpdateItemWithHttpInfo(System.String,Acme.CodeTest.Api.Model.CustomerSubscriptionDto,System.Int32)">
+            <summary>
+            Update Subscription record 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id">Id</param>
+            <param name="customerSubscriptionDto">Subscription record to update. (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.UpdateItemAsync(System.String,Acme.CodeTest.Api.Model.CustomerSubscriptionDto,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Update Subscription record 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id">Id</param>
+            <param name="customerSubscriptionDto">Subscription record to update. (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of List&lt;CustomerSubscriptionDto&gt;</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Api.SubscriptionApi.UpdateItemWithHttpInfoAsync(System.String,Acme.CodeTest.Api.Model.CustomerSubscriptionDto,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Update Subscription record 
+            </summary>
+            <exception cref="T:Acme.CodeTest.Api.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id">Id</param>
+            <param name="customerSubscriptionDto">Subscription record to update. (optional)</param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (List&lt;CustomerSubscriptionDto&gt;)</returns>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.CustomJsonCodec">
+            <summary>
+            Allows RestSharp to Serialize/Deserialize JSON using our custom logic, but only when ContentType is JSON.
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.CustomJsonCodec.Serialize(System.Object)">
+            <summary>
+            Serialize the object into a JSON string.
+            </summary>
+            <param name="obj">Object to be serialized.</param>
+            <returns>A JSON string.</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.CustomJsonCodec.Deserialize(RestSharp.IRestResponse,System.Type)">
+            <summary>
+            Deserialize the JSON string into a proper object.
+            </summary>
+            <param name="response">The HTTP response.</param>
+            <param name="type">Object type.</param>
+            <returns>Object representation of the JSON string.</returns>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.ApiClient">
+            <summary>
+            Provides a default implementation of an Api client (both synchronous and asynchronous implementations),
+            encapsulating general REST accessor use cases.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.ApiClient.SerializerSettings">
+            <summary>
+            Specifies the settings on a <see cref="T:Newtonsoft.Json.JsonSerializer" /> object.
+            These settings can be adjusted to accommodate custom serialization rules.
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Client.ApiClient" />, defaulting to the global configurations' base url.
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Client.ApiClient" />
+            </summary>
+            <param name="basePath">The target service's base path in URL format.</param>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.Method(Acme.CodeTest.Api.Client.HttpMethod)">
+            <summary>
+            Constructs the RestSharp version of an http method
+            </summary>
+            <param name="method">Swagger Client Custom HttpMethod</param>
+            <returns>RestSharp's HttpMethod instance.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.NewRequest(Acme.CodeTest.Api.Client.HttpMethod,System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Provides all logic for constructing a new RestSharp <see cref="T:RestSharp.RestRequest"/>.
+            At this point, all information for querying the service is known. Here, it is simply
+            mapped into the RestSharp request.
+            </summary>
+            <param name="method">The http verb.</param>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>[private] A new RestRequest instance.</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.GetAsync``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Make a HTTP GET request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <param name="cancellationToken">Token that enables callers to cancel the request.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.PostAsync``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Make a HTTP POST request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <param name="cancellationToken">Token that enables callers to cancel the request.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.PutAsync``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Make a HTTP PUT request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <param name="cancellationToken">Token that enables callers to cancel the request.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.DeleteAsync``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Make a HTTP DELETE request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <param name="cancellationToken">Token that enables callers to cancel the request.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.HeadAsync``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Make a HTTP HEAD request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <param name="cancellationToken">Token that enables callers to cancel the request.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.OptionsAsync``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Make a HTTP OPTION request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <param name="cancellationToken">Token that enables callers to cancel the request.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.PatchAsync``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Make a HTTP PATCH request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <param name="cancellationToken">Token that enables callers to cancel the request.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.Get``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP GET request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.Post``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP POST request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.Put``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP PUT request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.Delete``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP DELETE request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.Head``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP HEAD request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.Options``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP OPTION request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiClient.Patch``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP PATCH request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.ApiException">
+            <summary>
+            API Exception
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.ApiException.ErrorCode">
+            <summary>
+            Gets or sets the error code (HTTP status code)
+            </summary>
+            <value>The error code (HTTP status code).</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.ApiException.ErrorContent">
+            <summary>
+            Gets or sets the error content (body json object)
+            </summary>
+            <value>The error content (Http response body).</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.ApiException.Headers">
+            <summary>
+            Gets or sets the HTTP headers
+            </summary>
+            <value>HTTP headers</value>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Client.ApiException"/> class.
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiException.#ctor(System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Client.ApiException"/> class.
+            </summary>
+            <param name="errorCode">HTTP status code.</param>
+            <param name="message">Error message.</param>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiException.#ctor(System.Int32,System.String,System.Object,Acme.CodeTest.Api.Client.Multimap{System.String,System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Client.ApiException"/> class.
+            </summary>
+            <param name="errorCode">HTTP status code.</param>
+            <param name="message">Error message.</param>
+            <param name="errorContent">Error content.</param>
+            <param name="headers">HTTP Headers.</param>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.IApiResponse">
+            <summary>
+            Provides a non-generic contract for the ApiResponse wrapper.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IApiResponse.ResponseType">
+            <summary>
+            The data type of <see cref="P:Acme.CodeTest.Api.Client.IApiResponse.Content"/>
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IApiResponse.Content">
+            <summary>
+            The content of this response
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IApiResponse.StatusCode">
+            <summary>
+            Gets or sets the status code (HTTP status code)
+            </summary>
+            <value>The status code.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IApiResponse.Headers">
+            <summary>
+            Gets or sets the HTTP headers
+            </summary>
+            <value>HTTP headers</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IApiResponse.ErrorText">
+            <summary>
+            Gets or sets any error text defined by the calling client.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IApiResponse.Cookies">
+            <summary>
+            Gets or sets any cookies passed along on the response.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IApiResponse.RawContent">
+            <summary>
+            The raw content of this response
+            </summary>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.ApiResponse`1">
+            <summary>
+            API Response
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.ApiResponse`1.StatusCode">
+            <summary>
+            Gets or sets the status code (HTTP status code)
+            </summary>
+            <value>The status code.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.ApiResponse`1.Headers">
+            <summary>
+            Gets or sets the HTTP headers
+            </summary>
+            <value>HTTP headers</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.ApiResponse`1.Data">
+            <summary>
+            Gets or sets the data (parsed HTTP body)
+            </summary>
+            <value>The data.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.ApiResponse`1.ErrorText">
+            <summary>
+            Gets or sets any error text defined by the calling client.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.ApiResponse`1.Cookies">
+            <summary>
+            Gets or sets any cookies passed along on the response.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.ApiResponse`1.ResponseType">
+            <summary>
+            The content of this response
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.ApiResponse`1.Content">
+            <summary>
+            The data type of <see cref="P:Acme.CodeTest.Api.Client.ApiResponse`1.Content"/>
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.ApiResponse`1.RawContent">
+            <summary>
+            The raw content
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiResponse`1.#ctor(System.Net.HttpStatusCode,Acme.CodeTest.Api.Client.Multimap{System.String,System.String},`0,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1" /> class.
+            </summary>
+            <param name="statusCode">HTTP status code.</param>
+            <param name="headers">HTTP headers.</param>
+            <param name="data">Data (parsed HTTP body)</param>
+            <param name="rawContent">Raw content.</param>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiResponse`1.#ctor(System.Net.HttpStatusCode,Acme.CodeTest.Api.Client.Multimap{System.String,System.String},`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1" /> class.
+            </summary>
+            <param name="statusCode">HTTP status code.</param>
+            <param name="headers">HTTP headers.</param>
+            <param name="data">Data (parsed HTTP body)</param>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiResponse`1.#ctor(System.Net.HttpStatusCode,`0,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1" /> class.
+            </summary>
+            <param name="statusCode">HTTP status code.</param>
+            <param name="data">Data (parsed HTTP body)</param>
+            <param name="rawContent">Raw content.</param>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ApiResponse`1.#ctor(System.Net.HttpStatusCode,`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1" /> class.
+            </summary>
+            <param name="statusCode">HTTP status code.</param>
+            <param name="data">Data (parsed HTTP body)</param>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.ClientUtils">
+            <summary>
+            Utility functions providing some benefit to API client consumers.
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ClientUtils.SanitizeFilename(System.String)">
+            <summary>
+            Sanitize filename by removing the path
+            </summary>
+            <param name="filename">Filename</param>
+            <returns>Filename</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ClientUtils.ParameterToMultiMap(System.String,System.String,System.Object)">
+            <summary>
+            Convert params to key/value pairs.
+            Use collectionFormat to properly format lists and collections.
+            </summary>
+            <param name="collectionFormat">The swagger-supported collection format, one of: csv, tsv, ssv, pipes, multi</param>
+            <param name="name">Key name.</param>
+            <param name="value">Value object.</param>
+            <returns>A multimap of keys with 1..n associated values.</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ClientUtils.ParameterToString(System.Object,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            If parameter is DateTime, output in a formatted string (default ISO 8601), customizable with Configuration.DateTime.
+            If parameter is a list, join the list with ",".
+            Otherwise just return the string.
+            </summary>
+            <param name="obj">The parameter (header, path, query, form).</param>
+            <param name="configuration">An optional configuration instance, providing formatting options used in processing.</param>
+            <returns>Formatted string.</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ClientUtils.Base64Encode(System.String)">
+            <summary>
+            Encode string in base64 format.
+            </summary>
+            <param name="text">string to be encoded.</param>
+            <returns>Encoded string.</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ClientUtils.ReadAsBytes(System.IO.Stream)">
+            <summary>
+            Convert stream to byte array
+            </summary>
+            <param name="inputStream">Input stream to be converted</param>
+            <returns>Byte array</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ClientUtils.SelectHeaderContentType(System.String[])">
+            <summary>
+            Select the Content-Type header's value from the given content-type array:
+            if JSON type exists in the given array, use it;
+            otherwise use the first one defined in 'consumes'
+            </summary>
+            <param name="contentTypes">The Content-Type array to select from.</param>
+            <returns>The Content-Type header to use.</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ClientUtils.SelectHeaderAccept(System.String[])">
+            <summary>
+            Select the Accept header's value from the given accepts array:
+            if JSON exists in the given array, use it;
+            otherwise use all of them (joining into a string)
+            </summary>
+            <param name="accepts">The accepts array to select from.</param>
+            <returns>The Accept header to use.</returns>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Client.ClientUtils.JsonRegex">
+            <summary>
+            Provides a case-insensitive check that a provided content type is a known JSON-like content type.
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ClientUtils.IsJsonMime(System.String)">
+            <summary>
+            Check if the given MIME is a JSON MIME.
+            JSON MIME examples:
+               application/json
+               application/json; charset=UTF8
+               APPLICATION/JSON
+               application/vnd.company+json
+            </summary>
+            <param name="mime">MIME</param>
+            <returns>Returns True if MIME type is json.</returns>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.Configuration">
+            <summary>
+            Represents a set of configuration settings
+            </summary>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Client.Configuration.Version">
+            <summary>
+            Version of the package.
+            </summary>
+            <value>Version of the package.</value>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Client.Configuration.ISO8601_DATETIME_FORMAT">
+            <summary>
+            Identifier for ISO 8601 DateTime Format
+            </summary>
+            <remarks>See https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx#Anchor_8 for more information.</remarks>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Client.Configuration.DefaultExceptionFactory">
+            <summary>
+            Default creation of exceptions for a given method name and response object
+            </summary>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Client.Configuration._basePath">
+            <summary>
+            Defines the base path of the target API server.
+            Example: http://localhost:3000/v1/
+            </summary>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Client.Configuration._apiKey">
+            <summary>
+            Gets or sets the API key based on the authentication name.
+            This is the key and value comprising the "secret" for accessing an API.
+            </summary>
+            <value>The API key.</value>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Client.Configuration._apiKeyPrefix">
+            <summary>
+            Gets or sets the prefix (e.g. Token) of the API key based on the authentication name.
+            </summary>
+            <value>The prefix of the API key.</value>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Client.Configuration._servers">
+            <summary>
+            Gets or sets the servers defined in the OpenAPI spec.
+            </summary>
+            <value>The servers</value>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Client.Configuration._operationServers">
+            <summary>
+            Gets or sets the operation servers defined in the OpenAPI spec.
+            </summary>
+            <value>The operation servers</value>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Configuration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Client.Configuration" /> class
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Configuration.#ctor(System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Client.Configuration" /> class
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Configuration.BasePath">
+            <summary>
+            Gets or sets the base path for API access.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Configuration.DefaultHeader">
+            <summary>
+            Gets or sets the default header.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Configuration.DefaultHeaders">
+            <summary>
+            Gets or sets the default headers.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Configuration.Timeout">
+            <summary>
+            Gets or sets the HTTP timeout (milliseconds) of ApiClient. Default to 100000 milliseconds.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Configuration.Proxy">
+            <summary>
+            Gets or sets the proxy
+            </summary>
+            <value>Proxy.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Configuration.UserAgent">
+            <summary>
+            Gets or sets the HTTP user agent.
+            </summary>
+            <value>Http user agent.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Configuration.Username">
+            <summary>
+            Gets or sets the username (HTTP basic authentication).
+            </summary>
+            <value>The username.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Configuration.Password">
+            <summary>
+            Gets or sets the password (HTTP basic authentication).
+            </summary>
+            <value>The password.</value>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Configuration.GetApiKeyWithPrefix(System.String)">
+            <summary>
+            Gets the API key with prefix.
+            </summary>
+            <param name="apiKeyIdentifier">API key identifier (authentication scheme).</param>
+            <returns>API key with prefix.</returns>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Configuration.ClientCertificates">
+            <summary>
+            Gets or sets certificate collection to be sent with requests.
+            </summary>
+            <value>X509 Certificate collection.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Configuration.AccessToken">
+             <summary>
+             Gets or sets the access token for OAuth2 authentication.
+            
+             This helper property simplifies code generation.
+             </summary>
+             <value>The access token.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Configuration.TempFolderPath">
+            <summary>
+            Gets or sets the temporary folder path to store the files downloaded from the server.
+            </summary>
+            <value>Folder path.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Configuration.DateTimeFormat">
+            <summary>
+            Gets or sets the date time format used when serializing in the ApiClient
+            By default, it's set to ISO 8601 - "o", for others see:
+            https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx
+            and https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx
+            No validation is done to ensure that the string you're providing is valid
+            </summary>
+            <value>The DateTimeFormat string</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Configuration.ApiKeyPrefix">
+             <summary>
+             Gets or sets the prefix (e.g. Token) of the API key based on the authentication name.
+            
+             Whatever you set here will be prepended to the value defined in AddApiKey.
+            
+             An example invocation here might be:
+             <example>
+             ApiKeyPrefix["Authorization"] = "Bearer";
+             </example>
+             … where ApiKey["Authorization"] would then be used to set the value of your bearer token.
+            
+             <remarks>
+             OAuth2 workflows should set tokens via AccessToken.
+             </remarks>
+             </summary>
+             <value>The prefix of the API key.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Configuration.ApiKey">
+            <summary>
+            Gets or sets the API key based on the authentication name.
+            </summary>
+            <value>The API key.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Configuration.Servers">
+            <summary>
+            Gets or sets the servers.
+            </summary>
+            <value>The servers.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Configuration.OperationServers">
+            <summary>
+            Gets or sets the operation servers.
+            </summary>
+            <value>The operation servers.</value>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Configuration.GetServerUrl(System.Int32)">
+            <summary>
+            Returns URL based on server settings without providing values
+            for the variables
+            </summary>
+            <param name="index">Array index of the server settings.</param>
+            <return>The server URL.</return>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Configuration.GetServerUrl(System.Int32,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Returns URL based on server settings.
+            </summary>
+            <param name="index">Array index of the server settings.</param>
+            <param name="inputVariables">Dictionary of the variables and the corresponding values.</param>
+            <return>The server URL.</return>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Configuration.GetOperationServerUrl(System.String,System.Int32)">
+            <summary>
+            Returns URL based on operation server settings.
+            </summary>
+            <param name="operation">Operation associated with the request path.</param>
+            <param name="index">Array index of the server settings.</param>
+            <return>The operation server URL.</return>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Configuration.GetOperationServerUrl(System.String,System.Int32,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Returns URL based on operation server settings.
+            </summary>
+            <param name="operation">Operation associated with the request path.</param>
+            <param name="index">Array index of the server settings.</param>
+            <param name="inputVariables">Dictionary of the variables and the corresponding values.</param>
+            <return>The operation server URL.</return>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Configuration.GetServerUrl(System.Collections.Generic.IList{System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object}},System.Int32,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Returns URL based on server settings.
+            </summary>
+            <param name="servers">Dictionary of server settings.</param>
+            <param name="index">Array index of the server settings.</param>
+            <param name="inputVariables">Dictionary of the variables and the corresponding values.</param>
+            <return>The server URL.</return>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Configuration.ToDebugReport">
+            <summary>
+            Returns a string with essential information for debugging.
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Configuration.AddApiKey(System.String,System.String)">
+            <summary>
+            Add Api Key Header.
+            </summary>
+            <param name="key">Api Key name.</param>
+            <param name="value">Api Key value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Configuration.AddApiKeyPrefix(System.String,System.String)">
+            <summary>
+            Sets the API key prefix.
+            </summary>
+            <param name="key">Api Key name.</param>
+            <param name="value">Api Key value.</param>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Configuration.MergeConfigurations(Acme.CodeTest.Api.Client.IReadableConfiguration,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Merge configurations.
+            </summary>
+            <param name="first">First configuration.</param>
+            <param name="second">Second configuration.</param>
+            <return>Merged configuration.</return>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.ExceptionFactory">
+            <summary>
+            A delegate to ExceptionFactory method
+            </summary>
+            <param name="methodName">Method name</param>
+            <param name="response">Response</param>
+            <returns>Exceptions</returns>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.GlobalConfiguration">
+            <summary>
+            <see cref="T:Acme.CodeTest.Api.Client.GlobalConfiguration"/> provides a compile-time extension point for globally configuring
+            API Clients.
+            </summary>
+            <remarks>
+            A customized implementation via partial class may reside in another file and may
+            be excluded from automatic generation via a .openapi-generator-ignore file.
+            </remarks>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.GlobalConfiguration.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.GlobalConfiguration.#ctor(System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.String)">
+            <inheritdoc />
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.GlobalConfiguration.Instance">
+            <summary>
+            Gets or sets the default Configuration.
+            </summary>
+            <value>Configuration.</value>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.HttpMethod">
+            <summary>
+            Http methods supported by swagger
+            </summary>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Client.HttpMethod.Get">
+            <summary>HTTP GET request.</summary>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Client.HttpMethod.Post">
+            <summary>HTTP POST request.</summary>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Client.HttpMethod.Put">
+            <summary>HTTP PUT request.</summary>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Client.HttpMethod.Delete">
+            <summary>HTTP DELETE request.</summary>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Client.HttpMethod.Head">
+            <summary>HTTP HEAD request.</summary>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Client.HttpMethod.Options">
+            <summary>HTTP OPTIONS request.</summary>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Client.HttpMethod.Patch">
+            <summary>HTTP PATCH request.</summary>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.IApiAccessor">
+            <summary>
+            Represents configuration aspects required to interact with the API endpoints.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IApiAccessor.Configuration">
+            <summary>
+            Gets or sets the configuration object
+            </summary>
+            <value>An instance of the Configuration</value>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.IApiAccessor.GetBasePath">
+            <summary>
+            Gets the base path of the API client.
+            </summary>
+            <value>The base path</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IApiAccessor.ExceptionFactory">
+            <summary>
+            Provides a factory method hook for the creation of exceptions.
+            </summary>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.IAsynchronousClient">
+             <summary>
+             Contract for Asynchronous RESTful API interactions.
+            
+             This interface allows consumers to provide a custom API accessor client.
+             </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.IAsynchronousClient.GetAsync``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the GET http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.IAsynchronousClient.PostAsync``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the POST http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.IAsynchronousClient.PutAsync``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the PUT http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.IAsynchronousClient.DeleteAsync``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the DELETE http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.IAsynchronousClient.HeadAsync``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the HEAD http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.IAsynchronousClient.OptionsAsync``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the OPTIONS http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.IAsynchronousClient.PatchAsync``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration,System.Threading.CancellationToken)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the PATCH http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.IReadableConfiguration">
+            <summary>
+            Represents a readable-only configuration contract.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IReadableConfiguration.AccessToken">
+            <summary>
+            Gets the access token.
+            </summary>
+            <value>Access token.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IReadableConfiguration.ApiKey">
+            <summary>
+            Gets the API key.
+            </summary>
+            <value>API key.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IReadableConfiguration.ApiKeyPrefix">
+            <summary>
+            Gets the API key prefix.
+            </summary>
+            <value>API key prefix.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IReadableConfiguration.BasePath">
+            <summary>
+            Gets the base path.
+            </summary>
+            <value>Base path.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IReadableConfiguration.DateTimeFormat">
+            <summary>
+            Gets the date time format.
+            </summary>
+            <value>Date time format.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IReadableConfiguration.DefaultHeader">
+            <summary>
+            Gets the default header.
+            </summary>
+            <value>Default header.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IReadableConfiguration.DefaultHeaders">
+            <summary>
+            Gets the default headers.
+            </summary>
+            <value>Default headers.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IReadableConfiguration.TempFolderPath">
+            <summary>
+            Gets the temp folder path.
+            </summary>
+            <value>Temp folder path.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IReadableConfiguration.Timeout">
+            <summary>
+            Gets the HTTP connection timeout (in milliseconds)
+            </summary>
+            <value>HTTP connection timeout.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IReadableConfiguration.Proxy">
+            <summary>
+            Gets the proxy.
+            </summary>
+            <value>Proxy.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IReadableConfiguration.UserAgent">
+            <summary>
+            Gets the user agent.
+            </summary>
+            <value>User agent.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IReadableConfiguration.Username">
+            <summary>
+            Gets the username.
+            </summary>
+            <value>Username.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IReadableConfiguration.Password">
+            <summary>
+            Gets the password.
+            </summary>
+            <value>Password.</value>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IReadableConfiguration.OperationServers">
+            <summary>
+            Get the servers associated with the operation.
+            </summary>
+            <value>Operation servers.</value>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.IReadableConfiguration.GetApiKeyWithPrefix(System.String)">
+            <summary>
+            Gets the API key with prefix.
+            </summary>
+            <param name="apiKeyIdentifier">API key identifier (authentication scheme).</param>
+            <returns>API key with prefix.</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.IReadableConfiguration.GetOperationServerUrl(System.String,System.Int32)">
+            <summary>
+            Gets the Operation server url at the provided index.
+            </summary>
+            <param name="operation">Operation server name.</param>
+            <param name="index">Index of the operation server settings.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.IReadableConfiguration.ClientCertificates">
+            <summary>
+            Gets certificate collection to be sent with requests.
+            </summary>
+            <value>X509 Certificate collection.</value>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.ISynchronousClient">
+             <summary>
+             Contract for Synchronous RESTful API interactions.
+            
+             This interface allows consumers to provide a custom API accessor client.
+             </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ISynchronousClient.Get``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the GET http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ISynchronousClient.Post``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the POST http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ISynchronousClient.Put``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the PUT http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ISynchronousClient.Delete``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the DELETE http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ISynchronousClient.Head``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the HEAD http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ISynchronousClient.Options``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the OPTIONS http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.ISynchronousClient.Patch``1(System.String,Acme.CodeTest.Api.Client.RequestOptions,Acme.CodeTest.Api.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the PATCH http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:Acme.CodeTest.Api.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.Multimap`2">
+            <summary>
+            A dictionary in which one key has many associated values.
+            </summary>
+            <typeparam name="TKey">The type of the key</typeparam>
+            <typeparam name="TValue">The type of the value associated with the key.</typeparam>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.#ctor">
+            <summary>
+            Empty Constructor.
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.#ctor(System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>
+            Constructor with comparer.
+            </summary>
+            <param name="comparer"></param>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.GetEnumerator">
+            <summary>
+            To get the enumerator.
+            </summary>
+            <returns>Enumerator</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            To get the enumerator.
+            </summary>
+            <returns>Enumerator</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.Add(System.Collections.Generic.KeyValuePair{`0,System.Collections.Generic.IList{`1}})">
+            <summary>
+            Add values to Multimap
+            </summary>
+            <param name="item">Key value pair</param>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.Add(Acme.CodeTest.Api.Client.Multimap{`0,`1})">
+            <summary>
+            Add Multimap to Multimap
+            </summary>
+            <param name="multimap">Multimap</param>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.Clear">
+            <summary>
+            Clear Multimap
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.Contains(System.Collections.Generic.KeyValuePair{`0,System.Collections.Generic.IList{`1}})">
+            <summary>
+            Determines whether Multimap contains the specified item.
+            </summary>
+            <param name="item">Key value pair</param>
+            <exception cref="T:System.NotImplementedException">Method needs to be implemented</exception>
+            <returns>true if the Multimap contains the item; otherwise, false.</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.CopyTo(System.Collections.Generic.KeyValuePair{`0,System.Collections.Generic.IList{`1}}[],System.Int32)">
+            <summary>
+             Copy items of the Multimap to an array,
+                starting at a particular array index.
+            </summary>
+            <param name="array">The array that is the destination of the items copied
+                from Multimap. The array must have zero-based indexing.</param>
+            <param name="arrayIndex">The zero-based index in array at which copying begins.</param>
+            <exception cref="T:System.NotImplementedException">Method needs to be implemented</exception>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.Remove(System.Collections.Generic.KeyValuePair{`0,System.Collections.Generic.IList{`1}})">
+            <summary>
+            Removes the specified item from the Multimap.
+            </summary>
+            <param name="item">Key value pair</param>
+            <returns>true if the item is successfully removed; otherwise, false.</returns>
+            <exception cref="T:System.NotImplementedException">Method needs to be implemented</exception>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Multimap`2.Count">
+            <summary>
+            Gets the number of items contained in the Multimap.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Multimap`2.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the Multimap is read-only.
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.Add(`0,System.Collections.Generic.IList{`1})">
+            <summary>
+            Adds an item with the provided key and value to the Multimap.
+            </summary>
+            <param name="key">The object to use as the key of the item to add.</param>
+            <param name="value">The object to use as the value of the item to add.</param>
+            <exception cref="T:System.InvalidOperationException">Thrown when couldn't add the value to Multimap.</exception>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.ContainsKey(`0)">
+            <summary>
+            Determines whether the Multimap contains an item with the specified key.
+            </summary>
+            <param name="key">The key to locate in the Multimap.</param>
+            <returns>true if the Multimap contains an item with
+                the key; otherwise, false.</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.Remove(`0)">
+            <summary>
+            Removes item with the specified key from the Multimap.
+            </summary>
+            <param name="key">The key to locate in the Multimap.</param>
+            <returns>true if the item is successfully removed; otherwise, false.</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.TryGetValue(`0,System.Collections.Generic.IList{`1}@)">
+            <summary>
+            Gets the value associated with the specified key.
+            </summary>
+            <param name="key">The key whose value to get.</param>
+            <param name="value">When this method returns, the value associated with the specified key, if the
+                key is found; otherwise, the default value for the type of the value parameter.
+                This parameter is passed uninitialized.</param>
+            <returns> true if the object that implements Multimap contains
+                an item with the specified key; otherwise, false.</returns>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Multimap`2.Item(`0)">
+            <summary>
+            Gets or sets the item with the specified key.
+            </summary>
+            <param name="key">The key of the item to get or set.</param>
+            <returns>The value of the specified key.</returns>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Multimap`2.Keys">
+            <summary>
+            Gets a System.Collections.Generic.ICollection containing the keys of the Multimap.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.Multimap`2.Values">
+            <summary>
+            Gets a System.Collections.Generic.ICollection containing the values of the Multimap.
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.CopyTo(System.Array,System.Int32)">
+            <summary>
+             Copy the items of the Multimap to an System.Array,
+                starting at a particular System.Array index.
+            </summary>
+            <param name="array">The one-dimensional System.Array that is the destination of the items copied
+                from Multimap. The System.Array must have zero-based indexing.</param>
+            <param name="index">The zero-based index in array at which copying begins.</param>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.Add(`0,`1)">
+            <summary>
+            Adds an item with the provided key and value to the Multimap.
+            </summary>
+            <param name="key">The object to use as the key of the item to add.</param>
+            <param name="value">The object to use as the value of the item to add.</param>
+            <exception cref="T:System.InvalidOperationException">Thrown when couldn't add value to Multimap.</exception>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.TryRemove(`0,System.Collections.Generic.IList{`1}@)">
+            Helper method to encapsulate generator differences between dictionary types.
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.Multimap`2.TryAdd(`0,System.Collections.Generic.IList{`1})">
+            Helper method to encapsulate generator differences between dictionary types.
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.OpenAPIDateConverter">
+            <summary>
+            Formatter for 'date' openapi formats ss defined by full-date - RFC3339
+            see https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#data-types
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.OpenAPIDateConverter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Client.OpenAPIDateConverter" /> class.
+            </summary>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.RequestOptions">
+            <summary>
+            A container for generalized request inputs. This type allows consumers to extend the request functionality
+            by abstracting away from the default (built-in) request framework (e.g. RestSharp).
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.RequestOptions.PathParameters">
+            <summary>
+            Parameters to be bound to path parts of the Request's URL
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.RequestOptions.QueryParameters">
+            <summary>
+            Query parameters to be applied to the request.
+            Keys may have 1 or more values associated.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.RequestOptions.HeaderParameters">
+            <summary>
+            Header parameters to be applied to to the request.
+            Keys may have 1 or more values associated.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.RequestOptions.FormParameters">
+            <summary>
+            Form parameters to be sent along with the request.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.RequestOptions.FileParameters">
+            <summary>
+            File parameters to be sent along with the request.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.RequestOptions.Cookies">
+            <summary>
+            Cookies to be sent along with the request.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.RequestOptions.Operation">
+            <summary>
+            Operation associated with the request path.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.RequestOptions.OperationIndex">
+            <summary>
+            Index associated with the operation.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.RequestOptions.Data">
+            <summary>
+            Any data associated with a request body.
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Client.RequestOptions.#ctor">
+            <summary>
+            Constructs a new instance of <see cref="T:Acme.CodeTest.Api.Client.RequestOptions"/>
+            </summary>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Client.RetryConfiguration">
+            <summary>
+            Configuration class to set the polly retry policies to be applied to the requests.
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.RetryConfiguration.RetryPolicy">
+            <summary>
+            Retry policy
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Client.RetryConfiguration.AsyncRetryPolicy">
+            <summary>
+            Async retry policy
+            </summary>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Model.AbstractOpenAPISchema">
+            <summary>
+             Abstract base class for oneOf, anyOf schemas in the OpenAPI specification
+            </summary>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Model.AbstractOpenAPISchema.SerializerSettings">
+            <summary>
+             Custom JSON serializer
+            </summary>
+        </member>
+        <member name="F:Acme.CodeTest.Api.Model.AbstractOpenAPISchema.AdditionalPropertiesSerializerSettings">
+            <summary>
+             Custom JSON serializer for objects with additional properties
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.AbstractOpenAPISchema.ActualInstance">
+            <summary>
+            Gets or Sets the actual instance
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.AbstractOpenAPISchema.IsNullable">
+            <summary>
+            Gets or Sets IsNullable to indicate whether the instance is nullable
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.AbstractOpenAPISchema.SchemaType">
+            <summary>
+            Gets or Sets the schema type, which can be either `oneOf` or `anyOf`
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.AbstractOpenAPISchema.ToJson">
+            <summary>
+            Converts the instance into JSON string.
+            </summary>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Model.CountryDto">
+            <summary>
+            CountryDto
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CountryDto.#ctor(System.Int32,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Model.CountryDto" /> class.
+            </summary>
+            <param name="countryId">countryId.</param>
+            <param name="name">name.</param>
+            <param name="locale">locale.</param>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CountryDto.CountryId">
+            <summary>
+            Gets or Sets CountryId
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CountryDto.Name">
+            <summary>
+            Gets or Sets Name
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CountryDto.Locale">
+            <summary>
+            Gets or Sets Locale
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CountryDto.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CountryDto.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CountryDto.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="input">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CountryDto.Equals(Acme.CodeTest.Api.Model.CountryDto)">
+            <summary>
+            Returns true if CountryDto instances are equal
+            </summary>
+            <param name="input">Instance of CountryDto to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CountryDto.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CountryDto.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            To validate all properties of the instance
+            </summary>
+            <param name="validationContext">Validation context</param>
+            <returns>Validation Result</returns>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Model.CustomerDto">
+            <summary>
+            CustomerDto
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CustomerDto.#ctor(System.Int32,System.Int32,System.String,System.String,System.String,Acme.CodeTest.Api.Model.CountryDto,System.Guid,System.DateTime,System.DateTime)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Model.CustomerDto" /> class.
+            </summary>
+            <param name="id">id.</param>
+            <param name="addressId">addressId.</param>
+            <param name="externalId">externalId.</param>
+            <param name="firstName">firstName.</param>
+            <param name="lastName">lastName.</param>
+            <param name="country">country.</param>
+            <param name="customerGuid">customerGuid.</param>
+            <param name="createdOn">createdOn.</param>
+            <param name="lastModified">lastModified.</param>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerDto.Id">
+            <summary>
+            Gets or Sets Id
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerDto.AddressId">
+            <summary>
+            Gets or Sets AddressId
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerDto.ExternalId">
+            <summary>
+            Gets or Sets ExternalId
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerDto.FirstName">
+            <summary>
+            Gets or Sets FirstName
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerDto.LastName">
+            <summary>
+            Gets or Sets LastName
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerDto.Country">
+            <summary>
+            Gets or Sets Country
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerDto.CustomerGuid">
+            <summary>
+            Gets or Sets CustomerGuid
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerDto.CreatedOn">
+            <summary>
+            Gets or Sets CreatedOn
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerDto.LastModified">
+            <summary>
+            Gets or Sets LastModified
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CustomerDto.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CustomerDto.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CustomerDto.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="input">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CustomerDto.Equals(Acme.CodeTest.Api.Model.CustomerDto)">
+            <summary>
+            Returns true if CustomerDto instances are equal
+            </summary>
+            <param name="input">Instance of CustomerDto to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CustomerDto.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CustomerDto.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            To validate all properties of the instance
+            </summary>
+            <param name="validationContext">Validation context</param>
+            <returns>Validation Result</returns>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Model.CustomerSubscriptionDto">
+            <summary>
+            CustomerSubscriptionDto
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.#ctor(System.Int32,System.Int32,System.Int32,System.String,System.Boolean,System.DateTime,System.DateTime,Acme.CodeTest.Api.Model.PublicationDto,Acme.CodeTest.Api.Model.CustomerDto,System.Guid,System.DateTime,System.DateTime)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Model.CustomerSubscriptionDto" /> class.
+            </summary>
+            <param name="subscriptionId">subscriptionId.</param>
+            <param name="publicationId">publicationId.</param>
+            <param name="customerId">customerId.</param>
+            <param name="externalId">externalId.</param>
+            <param name="isActive">isActive.</param>
+            <param name="startDate">startDate.</param>
+            <param name="endDate">endDate.</param>
+            <param name="publication">publication.</param>
+            <param name="customer">customer.</param>
+            <param name="subscriptionGuid">subscriptionGuid.</param>
+            <param name="createdOn">createdOn.</param>
+            <param name="lastModified">lastModified.</param>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.SubscriptionId">
+            <summary>
+            Gets or Sets SubscriptionId
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.PublicationId">
+            <summary>
+            Gets or Sets PublicationId
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.CustomerId">
+            <summary>
+            Gets or Sets CustomerId
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.ExternalId">
+            <summary>
+            Gets or Sets ExternalId
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.IsActive">
+            <summary>
+            Gets or Sets IsActive
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.StartDate">
+            <summary>
+            Gets or Sets StartDate
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.EndDate">
+            <summary>
+            Gets or Sets EndDate
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.Publication">
+            <summary>
+            Gets or Sets Publication
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.Customer">
+            <summary>
+            Gets or Sets Customer
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.SubscriptionGuid">
+            <summary>
+            Gets or Sets SubscriptionGuid
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.CreatedOn">
+            <summary>
+            Gets or Sets CreatedOn
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.LastModified">
+            <summary>
+            Gets or Sets LastModified
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="input">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.Equals(Acme.CodeTest.Api.Model.CustomerSubscriptionDto)">
+            <summary>
+            Returns true if CustomerSubscriptionDto instances are equal
+            </summary>
+            <param name="input">Instance of CustomerSubscriptionDto to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.CustomerSubscriptionDto.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            To validate all properties of the instance
+            </summary>
+            <param name="validationContext">Validation context</param>
+            <returns>Validation Result</returns>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Model.PrintDistributorDto">
+            <summary>
+            PrintDistributorDto
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.PrintDistributorDto.#ctor(System.Int32,System.Int32,System.String,System.String,Acme.CodeTest.Api.Model.CountryDto,System.Guid,System.DateTime,System.DateTime)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Model.PrintDistributorDto" /> class.
+            </summary>
+            <param name="printDistributorId">printDistributorId.</param>
+            <param name="countryId">countryId.</param>
+            <param name="name">name.</param>
+            <param name="description">description.</param>
+            <param name="country">country.</param>
+            <param name="printDistributorGuid">printDistributorGuid.</param>
+            <param name="createdOn">createdOn.</param>
+            <param name="lastModified">lastModified.</param>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PrintDistributorDto.PrintDistributorId">
+            <summary>
+            Gets or Sets PrintDistributorId
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PrintDistributorDto.CountryId">
+            <summary>
+            Gets or Sets CountryId
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PrintDistributorDto.Name">
+            <summary>
+            Gets or Sets Name
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PrintDistributorDto.Description">
+            <summary>
+            Gets or Sets Description
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PrintDistributorDto.Country">
+            <summary>
+            Gets or Sets Country
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PrintDistributorDto.PrintDistributorGuid">
+            <summary>
+            Gets or Sets PrintDistributorGuid
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PrintDistributorDto.CreatedOn">
+            <summary>
+            Gets or Sets CreatedOn
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PrintDistributorDto.LastModified">
+            <summary>
+            Gets or Sets LastModified
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.PrintDistributorDto.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.PrintDistributorDto.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.PrintDistributorDto.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="input">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.PrintDistributorDto.Equals(Acme.CodeTest.Api.Model.PrintDistributorDto)">
+            <summary>
+            Returns true if PrintDistributorDto instances are equal
+            </summary>
+            <param name="input">Instance of PrintDistributorDto to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.PrintDistributorDto.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.PrintDistributorDto.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            To validate all properties of the instance
+            </summary>
+            <param name="validationContext">Validation context</param>
+            <returns>Validation Result</returns>
+        </member>
+        <member name="T:Acme.CodeTest.Api.Model.PublicationDto">
+            <summary>
+            PublicationDto
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.PublicationDto.#ctor(System.Int32,System.Int32,System.String,System.DateTime,System.String,System.String,Acme.CodeTest.Api.Model.PrintDistributorDto,System.Guid,System.DateTime,System.DateTime)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Acme.CodeTest.Api.Model.PublicationDto" /> class.
+            </summary>
+            <param name="publicationId">publicationId.</param>
+            <param name="printDistributorId">printDistributorId.</param>
+            <param name="name">name.</param>
+            <param name="firstPublished">firstPublished.</param>
+            <param name="description">description.</param>
+            <param name="notes">notes.</param>
+            <param name="printDistributer">printDistributer.</param>
+            <param name="publicationGuid">publicationGuid.</param>
+            <param name="createdOn">createdOn.</param>
+            <param name="lastModified">lastModified.</param>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PublicationDto.PublicationId">
+            <summary>
+            Gets or Sets PublicationId
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PublicationDto.PrintDistributorId">
+            <summary>
+            Gets or Sets PrintDistributorId
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PublicationDto.Name">
+            <summary>
+            Gets or Sets Name
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PublicationDto.FirstPublished">
+            <summary>
+            Gets or Sets FirstPublished
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PublicationDto.Description">
+            <summary>
+            Gets or Sets Description
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PublicationDto.Notes">
+            <summary>
+            Gets or Sets Notes
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PublicationDto.PrintDistributer">
+            <summary>
+            Gets or Sets PrintDistributer
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PublicationDto.PublicationGuid">
+            <summary>
+            Gets or Sets PublicationGuid
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PublicationDto.CreatedOn">
+            <summary>
+            Gets or Sets CreatedOn
+            </summary>
+        </member>
+        <member name="P:Acme.CodeTest.Api.Model.PublicationDto.LastModified">
+            <summary>
+            Gets or Sets LastModified
+            </summary>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.PublicationDto.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.PublicationDto.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.PublicationDto.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="input">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.PublicationDto.Equals(Acme.CodeTest.Api.Model.PublicationDto)">
+            <summary>
+            Returns true if PublicationDto instances are equal
+            </summary>
+            <param name="input">Instance of PublicationDto to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.PublicationDto.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="M:Acme.CodeTest.Api.Model.PublicationDto.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            To validate all properties of the instance
+            </summary>
+            <param name="validationContext">Validation context</param>
+            <returns>Validation Result</returns>
+        </member>
+    </members>
+</doc>
