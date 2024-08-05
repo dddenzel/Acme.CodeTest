@@ -55,7 +55,7 @@ namespace Acme.NotifyPrintDistributor.Handlers
             }
             catch(Exception ex)
             {
-                throw new Exception($"Error sending subscription information to distributor: {ex}")
+                throw new Exception($"Error sending subscription information to distributor: {ex}");
             }
             
 
