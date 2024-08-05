@@ -5,6 +5,7 @@ namespace Acme.NotifyPrintDistributor.Interfaces
 {
     public interface ISubscriptionHandler
     {
+        int DistributorId { get; }
         Task HandleSubscriptionAsync(SourceRecord sourceRecord, CustomerSubscriptionDto subscription);
         Type ModelType { get; set; }
         Task ConfigureExternalApiAsync();

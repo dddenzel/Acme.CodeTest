@@ -46,10 +46,18 @@ namespace Acme.NotifyPrintDistributor.Handlers
             }
 
             // Map to external/outbound record
-            object externalSubscriptionModel = MapToExternalSubscriptionModel(subscription);
+            var externalSubscriptionModel = MapToExternalSubscriptionModel(subscription);
 
-            // Send to our distributor
-            await SendSubscriptionToDistributorAsync(externalSubscriptionModel);
+            try
+            {
+                // Send to our distributor
+                await SendSubscriptionToDistributorAsync(externalSubscriptionModel);
+            }
+            catch(Exception ex)
+            {
+                throw new Exception($"Error sending subscription information to distributor: {ex}")
+            }
+            
 
         }
 

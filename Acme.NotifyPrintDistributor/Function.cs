@@ -4,6 +4,7 @@ using Acme.NotifyPrintDistributor.Interfaces;
 using Acme.NotifyPrintDistributor.Model;
 using Amazon.Lambda.Core;
 using Amazon.Lambda.SQSEvents;
+using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using SimpleInjector;
 using SimpleInjector.Lifestyles;
@@ -74,7 +75,7 @@ public class Function
                     ValidateSourceRecord(sourceRecord);
 
                     // Get and configure our subscription api.
-                    // Note: Normall of course there would be some authentication on this. Out of scope.
+                    // Note: Normally of course there would be some authentication on this. Out of scope.
                     subscriptionApi = scope.GetInstance<ISubscriptionApi>();                                        
 
                     // Start by getting our subscription                    
@@ -82,13 +83,14 @@ public class Function
                     int? distributorId = customerSubscription.Publication?.PrintDistributorId;
 
                     // Find our handler based on the distributor used in our publication
-                    distibutorHandlers = scope.GetInstance<IDictionary<int, ISubscriptionHandler>>();
-                    if (distributorId.HasValue && (distibutorHandlers?.ContainsKey(distributorId.Value) ?? false))
+                    subscriptionHandler = scope.GetServices<ISubscriptionHandler>().FirstOrDefault(x => x.DistributorId == distributorId);
+                       
+                    // Throw an error if we can't find our distributor
+                    if (subscriptionHandler == null)
                         throw new KeyNotFoundException($"Could not determine handler for distributorId " +
                             $"{distributorId}");
 
-                    // Call the handler
-                    subscriptionHandler = distibutorHandlers[distributorId.Value];
+                    // Call the handler                    
                     await subscriptionHandler.HandleSubscriptionAsync(sourceRecord, customerSubscription);                    
 
                 }

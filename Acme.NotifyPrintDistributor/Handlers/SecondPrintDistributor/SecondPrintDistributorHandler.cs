@@ -20,6 +20,11 @@ namespace Acme.NotifyPrintDistributor.Handlers.SecondPrintDistributor
         /// </summary>
         public override Type ModelType { get; set; }
 
+        /// <summary>
+        /// Distributor Id matching database primary key
+        /// </summary>
+        public int DistributorId { get { return 2; } }
+
         #endregion
 
         /// <summary>

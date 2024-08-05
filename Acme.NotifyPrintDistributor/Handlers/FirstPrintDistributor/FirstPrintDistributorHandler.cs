@@ -22,6 +22,11 @@ namespace Acme.NotifyPrintDistributor.Handlers.FirstPrintDistributor
         /// </summary>
         public override Type ModelType { get; set; }
 
+        /// <summary>
+        /// Distributor Id matching database primary key
+        /// </summary>
+        public int DistributorId { get { return 1; } }
+        
         #endregion
 
         /// <summary>
@@ -59,7 +64,7 @@ namespace Acme.NotifyPrintDistributor.Handlers.FirstPrintDistributor
                 // Use this method to implement any business logic or data transformation specific
                 // to this print distributor.
 
-                // For example, perhaps our external Id is expected to be an inteteger
+                // For example, perhaps our external Id is expected to be an integer
                 int intExternalId;
                 if (!int.TryParse(externalId, out intExternalId))
                     throw new InvalidCastException($"Could not cast externalId {externalId} to an integer");
